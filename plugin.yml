@@ -1,0 +1,7 @@
+main: com.virgilio.chat.help.ChatHelp
+name: ChatHelpMenu
+version: 3.1
+api-version: 1.14
+softdepend: [Essentials]
+commands:
+  help:

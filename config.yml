@@ -1,0 +1,113 @@
+default-menu: '1'   #---> Menu opened when just "/help" is executed
+
+Menus:   # ---> Unlimited help menus, open with: "/help <menu>", reload config with: "/help reload"
+  '1':   # ---> Anything (except "reload")
+  - '&a&l&m=============%TITLE% &d&o1 &a&l&m=============&r  %NEXT%'   # ---> Unlimited lines
+  - '%BAL%: &fView how much money a player owns'
+  - '%PAY% &fTransfer money to another player'
+  - '%TPA% &fAsk to teleport to a player'
+  - '%TPA-H% &fAsk a player to teleport ot your location'
+  - '%S-HOME% &fSet your location to a home you can travel to'
+  - '%HOME% &fTeleport to the homes you have set'
+  - '%MSG% &fSend a message to another player privately'
+  - '%KIT% &fObtain kits you have access to'
+  - '%WARP% &fTeleport to a public warp'
+  
+  '2':
+  - '&a&l&m=============%TITLE% &d&o2 &a&l&m=============&r  %BACK%'
+  - '%BAL%: &fView how much money a player owns'
+  - '%PAY% &fTransfer money to another player'
+  - '%TPA% &fAsk to teleport to a player'
+  - '%TPA-H% &fAsk a player to teleport ot your location'
+  - '%S-HOME% &fSet your location to a home you can travel to'
+  - '%HOME% &fTeleport to the homes you have set'
+  - '%MSG% &fSend a message to another player privately'
+  - '%KIT% &fObtain kits you have access to'
+  - '%WARP% &fTeleport to a public warp'
+  
+  'skyblock':
+  - '&3&l&m================&b&l&o SkyBlock Help &3&l&m================'
+  - '&b/is create: &fCreate an island'
+  - '&b/is go: &fTravel to your island'
+  - '&b/is missions: &fComplete island missions '
+  - '&b/is top: &fView the best islands leaderboard'
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - '&3&l&m============================================='
+  
+Actions:   #---> Text that will have special actions (click/hover)
+  '%TITLE%':   
+    text: '&6&l&o ChatHelpMenu '
+    action: 'OPEN_URL'   #---> [RUN_COMMAND, SUGGEST_COMMAND, OPEN_URL]
+    click: 'https://discord.gg/RKrfN3y7aV'
+    hover: '&dClick me!'
+    
+  '%NEXT%':
+    text: '&6&onext'
+    action: 'RUN_COMMAND'  
+    click: '/help 2'
+    hover: '&eNext page!'
+
+  '%BACK%':
+    text: '&6&oback'
+    action: 'RUN_COMMAND'
+    click: '/help 1'
+    hover: '&ePrevious page!'
+    
+  '%BAL%':
+    text: '&a/balance'
+    action: 'SUGGEST_COMMAND'
+    click: '/balance'
+    hover: '&6/balance &e<player>'
+    
+  '%PAY%':
+    text: '&a/pay'
+    action: 'SUGGEST_COMMAND'
+    click: '/pay'
+    hover: '&6/pay &e<player> <amount>'
+  
+  '%TPA%':
+    text: '&a/tpa'
+    action: 'SUGGEST_COMMAND'
+    click: '/tpa'
+    hover: '&6/tpa &e<player>'
+  
+  '%TPA-H%':
+    text: '&a/tpahere'
+    action: 'SUGGEST_COMMAND'
+    click: '/tpahere'
+    hover: '&6/tpahere &e<player>'
+  
+  '%S-HOME%':
+    text: '&a/sethome'
+    action: 'SUGGEST_COMMAND'
+    click: '/sethome'
+    hover: '&6/sethome &e<name>'
+    
+  '%HOME%':
+    text: '&a/home'
+    action: 'SUGGEST_COMMAND'
+    click: '/home'
+    hover: '&6/home &e<name>'
+  
+  '%MSG%':
+    text: '&a/message'
+    action: 'SUGGEST_COMMAND'
+    click: '/message'
+    hover: '&6/message &e<player> <message>'
+    
+  '%KIT%':
+    text: '&a/kit'
+    action: 'SUGGEST_COMMAND'
+    click: '/kit'
+    hover: '&6/kit &e<name>'
+  
+  '%WARP%':
+    text: '&a/warp'
+    action: 'SUGGEST_COMMAND'
+    click: '/warp'
+    hover: '&6/warp &e<name>'
+
+   
